@@ -1,2 +1,15 @@
 ---
-# tasks file for haskell-stack
+- name: Haskell Stack APT key
+  apt_key: keyserver=keyserver.ubuntu.com id=575159689BEFB442
+  when: ansible_os_family == "Linux" and ansible_distribution == "Ubuntu"
+  tags: haskell
+
+- name: Haskell Stack APT repository
+  apt_repository: repo="deb http://download.fpcomplete.com/ubuntu {{ ansible_distribution_release }} main"
+  when: ansible_os_family == "Linux" and ansible_distribution == "Ubuntu"
+  tags: haskell
+
+- name: Haskell Stack APT package
+  apt: pkg=stack update_cache=yes
+  when: ansible_os_family == "Linux" and ansible_distribution == "Ubuntu"
+  tags: haskell

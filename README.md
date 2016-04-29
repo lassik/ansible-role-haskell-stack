@@ -1,12 +1,17 @@
-Role Name
-=========
+haskell-stack
+=============
 
-A brief description of the role goes here.
+Install Haskell Stack (http://www.haskellstack.org)
+
+Based on instructions at
+
+* https://www.stackage.org/install
+* https://www.jdreaver.com/posts/2015-12-02-ansible-stack.html
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+# UBUNTU ONLY for now! Patches welcome.
 
 Role Variables
 --------------
