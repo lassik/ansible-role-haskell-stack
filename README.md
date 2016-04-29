@@ -1,12 +1,12 @@
 haskell-stack
 =============
 
-Install Haskell Stack (http://www.haskellstack.org)
+Install Haskell Stack (<http://www.haskellstack.org>)
 
 Based on instructions at
 
-* https://www.stackage.org/install
-* https://www.jdreaver.com/posts/2015-12-02-ansible-stack.html
+* <https://www.stackage.org/install>
+* <https://www.jdreaver.com/posts/2015-12-02-ansible-stack.html>
 
 Requirements
 ------------
