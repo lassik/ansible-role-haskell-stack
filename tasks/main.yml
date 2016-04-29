@@ -13,3 +13,7 @@
   apt: pkg=stack update_cache=yes
   when: ansible_os_family == "Linux" and ansible_distribution == "Ubuntu"
   tags: haskell
+
+- name: Haskell Stack setup
+  command: stack setup
+  tags: haskell
